@@ -33,11 +33,11 @@
         <ul class="nav-list">
           <li><a href="#hero" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#career-goals" class="nav-link">Career Goals</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -76,11 +76,11 @@
         <ul class="mobile-nav-list">
           <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
           <li><a href="#about" class="mobile-nav-link">About</a></li>
-          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
-          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
           <li><a href="#education" class="mobile-nav-link">Education</a></li>
+          <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+          <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
           <li><a href="#services" class="mobile-nav-link">Services</a></li>
-          <li><a href="#career-goals" class="mobile-nav-link">Career Goals</a></li>
+          <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
           <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -96,52 +96,49 @@
     <section class="hero-section" id="hero">
       <div class="hero-bg-accent" aria-hidden="true"></div>
       <div class="container hero-container">
-        <div class="hero-content">
-          <div class="hero-badge animate-on-scroll">
-            <span class="status-indicator"></span>
-            <span>Available for Opportunities & Projects</span>
+        <div class="hero-grid">
+          <!-- Hero Photo Card (Left) -->
+          <div class="hero-photo-wrapper animate-on-scroll">
+            <div class="hero-photo-card">
+              <div class="hero-photo-img-wrap">
+                <img src="protofolio.jpg" alt="Nada Ibrahim Fathy" class="hero-photo-img">
+              </div>
+            </div>
           </div>
 
-          <h1 class="hero-title animate-on-scroll">
-            Hi, I'm <span class="gradient-text">Nada Ibrahim Fathy</span>
-          </h1>
+          <!-- Hero Content (Right) -->
+          <div class="hero-content">
+            <h1 class="hero-title animate-on-scroll">
+              <span class="gradient-text">Nada Ibrahim Fathy</span>
+            </h1>
 
-          <h2 class="hero-subtitle animate-on-scroll">
-            Full-Stack .NET Developer
-          </h2>
+            <h2 class="hero-subtitle animate-on-scroll">
+              Full-Stack .NET Developer
+            </h2>
 
-          <p class="hero-intro animate-on-scroll">
-            I am a passionate Full-Stack .NET Developer who enjoys solving complex problems and turning ideas into practical software solutions. I focus on building clean, scalable, and user-friendly web applications while continuously developing my technical skills.
-          </p>
+            <p class="hero-intro animate-on-scroll">
+              I build end-to-end web applications bridging frontend user experience with high-performance .NET Core &amp; SQL backends. Focused on Clean Architecture, SOLID principles, and clear communication to turn business ideas into reliable software.
+            </p>
 
-          <div class="hero-cta-group animate-on-scroll">
-            <a href="#projects" class="btn btn-primary">
-              <span>View Projects</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="5" y1="12" x2="19" y2="12"></line>
-                <polyline points="12 5 19 12 12 19"></polyline>
-              </svg>
-            </a>
-            <a href="#contact" class="btn btn-secondary">
-              <span>Contact Me</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-            </a>
-          </div>
+            <div class="hero-cta-group animate-on-scroll">
+              <a href="#about" class="btn btn-primary">
+                <span>Learn More About Me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
 
-          <div class="hero-tech-pills animate-on-scroll">
-            <span class="tech-pill">C#</span>
-            <span class="tech-pill">.NET Core</span>
-            <span class="tech-pill">ASP.NET MVC</span>
-            <span class="tech-pill">Web API</span>
-            <span class="tech-pill">SQL Server</span>
-            <span class="tech-pill">OOP Architecture</span>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
 
     <!-- ════════════════════════════════════════════════════════════ -->
     <!-- ABOUT ME SECTION -->
@@ -149,86 +146,181 @@
     <section class="section about-section" id="about">
       <div class="container">
         <div class="section-header animate-on-scroll">
-          <span class="section-tag">Introduction</span>
           <h2 class="section-title">About Me</h2>
           <div class="section-divider"></div>
         </div>
 
-        <div class="about-grid">
-          <!-- Photo Placeholder Card -->
-          <div style="background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 16px; width: 100%; max-width: 320px;">
-        <!-- 1. الصورة فوق كاملة وبأبعادها الطبيعية بدون قص -->
-        <div style="width: 100%; border-radius: 12px; overflow: hidden;">
-          <img src="protofolio.jpg" alt="Nada Ibrahim Fathy" style="width: 100%; height: auto; display: block; border-radius: 12px; object-fit: contain;">
-        </div>
-
-        <!-- 2. الكلام تحت الصورة بشكل مريح ومستقل -->
-        <div style="display: flex; flex-direction: column; gap: 10px; color: #e5e7eb; font-size: 14px;">
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; padding-bottom: 6px;">
-            <span style="color: #9ca3af;">Specialization</span>
-            <strong style="color: #fff;">.NET Full-Stack</strong>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1f2937; padding-bottom: 6px;">
-            <span style="color: #9ca3af;">Focus</span>
-            <strong style="color: #fff;">Backend & Clean Architecture</strong>
-          </div>
-          <div style="display: flex; justify-content: space-between; align-items: center;">
-            <span style="color: #9ca3af;">Status</span>
-            <span style="color: #60a5fa; font-weight: 600;">Active Learner & Developer</span>
-          </div>
-        </div>
-      </div>
-
+        <div class="about-grid about-no-photo">
           <!-- About Narrative -->
           <div class="about-text-content animate-on-scroll">
             <div class="content-card">
               <p class="paragraph">
-                I am passionate about software development, with a particular interest in problem-solving and tackling challenging programming tasks. What motivates me most is finding effective solutions to complex problems and experiencing the satisfaction of seeing my code work successfully after putting in the effort.
+                I'm a Full-Stack .NET Developer and Software Engineering student. My journey started in Front-end development, where I built a strong eye for UI/UX and interactive design. Driven by a desire to build complete, independent web applications, I expanded into Back-end engineering, mastering C#, ASP.NET Core, RESTful APIs, and Relational Databases (SQL).
               </p>
               <p class="paragraph">
-                I chose .NET Development because it is a powerful, structured, and versatile technology for building professional and scalable applications. I also value the continuous learning that comes with software development, as every project gives me an opportunity to improve my skills, explore new technologies, and create something meaningful.
+                I focus on writing maintainable code using Clean Architecture and SOLID principles to ensure every system is secure, fast, and scalable.
               </p>
               <p class="paragraph">
-                Currently, I am focused on strengthening my technical skills and gaining practical experience within a professional development environment. My long-term goal is to become a Senior .NET Developer capable of designing and developing large-scale, scalable systems while contributing effectively to professional development teams and sharing knowledge with other developers.
+                I know that for many small business owners, dealing with complex tech jargon and huge development costs can be overwhelming. I bridge that gap by speaking clear business language, keeping the process transparent, and delivering reliable, end-to-end web solutions that help your business grow smoothly.
               </p>
 
-              <div class="about-pillars">
-                <div class="pillar-item">
-                  <div class="pillar-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                      <polyline points="2 17 12 22 22 17"></polyline>
-                      <polyline points="2 12 12 17 22 12"></polyline>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="pillar-title">Structured Architecture</h4>
-                    <p class="pillar-desc">Writing clean, maintainable, object-oriented code.</p>
-                  </div>
-                </div>
-
-                <div class="pillar-item">
-                  <div class="pillar-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <path d="m4.93 4.93 4.24 4.24"></path>
-                      <path d="m14.83 9.17 4.24-4.24"></path>
-                      <path d="m14.83 14.83 4.24 4.24"></path>
-                      <path d="m9.17 14.83-4.24 4.24"></path>
-                      <circle cx="12" cy="12" r="4"></circle>
-                    </svg>
-                  </div>
-                  <div>
-                    <h4 class="pillar-title">Problem Solving</h4>
-                    <p class="pillar-desc">Analytical approach to algorithmic and workflow challenges.</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- EDUCATION & TRAINING SECTION -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">Learning Journey</span>
+          <h2 class="section-title">Education &amp; Training</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Formal university education combined with intensive specialized software engineering training tracks.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1: University -->
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-category">Higher Education</span>
+                <span class="timeline-date">Graduation: 2027</span>
+              </div>
+              <h3 class="timeline-title">Delta Technological University</h3>
+              <div class="timeline-meta-row">
+                <span class="meta-pill">Department: Software</span>
+                <span class="meta-pill">Academic Level: Fourth Year</span>
+                <span class="meta-pill">Expected Graduation: 2027</span>
+              </div>
+              <p class="timeline-body">
+                Pursuing rigorous software engineering studies focusing on computer science fundamentals, software engineering methodologies, data structures, algorithms, and practical software design.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: DEPI Training -->
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-category">Professional Training</span>
+                <span class="timeline-date">Start Date: July 15, 2026</span>
+              </div>
+              <h3 class="timeline-title">Full-Stack .NET Web Developer — DEPI</h3>
+              <div class="timeline-meta-row">
+                <span class="meta-pill">Duration: 6 Months</span>
+                <span class="meta-pill highlight-pill">Specialized Track</span>
+              </div>
+              <p class="timeline-body">
+                Intensive 6-month hands-on full-stack development track focusing on building enterprise-grade .NET applications, scalable backend APIs, containerization, and modern software development practices.
+              </p>
+
+              <div class="timeline-topics-box">
+                <h4 class="topics-title">Curriculum Topics Covered:</h4>
+                <div class="topics-grid">
+                  <span class="topic-item">Prompt Engineering</span>
+                  <span class="topic-item">SQL Server Programming</span>
+                  <span class="topic-item">Git &amp; GitHub</span>
+                  <span class="topic-item">C#</span>
+                  <span class="topic-item">HTML5</span>
+                  <span class="topic-item">JavaScript</span>
+                  <span class="topic-item">CSS3</span>
+                  <span class="topic-item">Functional Documentation</span>
+                  <span class="topic-item">Unit Testing</span>
+                  <span class="topic-item">Docker</span>
+                  <span class="topic-item">Containerization Basics</span>
+                  <span class="topic-item">.NET Core Web API</span>
+                  <span class="topic-item">.NET Core MVC Web Applications</span>
+                  <span class="topic-item">Capstone Project</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: ITI Training -->
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-category">Technical Training</span>
+                <span class="timeline-date">126 Hours</span>
+              </div>
+              <h3 class="timeline-title">ITI — Full Stack Web Development Using PHP</h3>
+              <div class="timeline-meta-row">
+                <span class="meta-pill">Duration: 126 Hours</span>
+                <span class="meta-pill badge-available">Certificate: Available</span>
+              </div>
+              <p class="timeline-body">
+                Completed focused training covering web development principles, backend programming with PHP, database communication, and full-stack integration through practical lab exercises.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <!-- EXPERIENCE SECTION -->
+    <!-- ════════════════════════════════════════════════════════════ -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="timeline-container">
+          <div class="timeline-line" aria-hidden="true"></div>
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot">
+              <span class="dot-inner"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <span class="timeline-category">Freelance</span>
+              </div>
+              <h3 class="timeline-title">Freelance Full-Stack .NET Developer</h3>
+              <div class="timeline-meta-row">
+                <span class="meta-pill">Khamsat</span>
+                <span class="meta-pill">Mostaql</span>
+                <span class="meta-pill">FreelanceYard</span>
+                <span class="meta-pill">Freelancer.com</span>
+              </div>
+              <p class="timeline-body">End-to-End Solutions: Build complete web applications from scratch for clients and small businesses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
 
     <!-- ════════════════════════════════════════════════════════════ -->
     <!-- SKILLS SECTION -->
@@ -237,7 +329,7 @@
       <div class="container">
         <div class="section-header animate-on-scroll">
           <span class="section-tag">Technical Competencies</span>
-          <h2 class="section-title">Skills & Technologies</h2>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
           <div class="section-divider"></div>
           <p class="section-subtitle">
             A balanced overview of my core competencies across the modern full-stack development lifecycle.
@@ -383,9 +475,120 @@
       </div>
     </section>
 
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
+
     <!-- ════════════════════════════════════════════════════════════ -->
-    <!-- PROJECTS SECTION -->
+    <!-- SERVICES SECTION -->
     <!-- ════════════════════════════════════════════════════════════ -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag">What I Offer</span>
+          <h2 class="section-title">Services</h2>
+          <div class="section-divider"></div>
+          <p class="section-subtitle">
+            Realistic technical services aligned with my current skills, practical competencies, and ongoing development as a Full-Stack .NET Developer.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 01 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-card-top">
+              <span class="service-index">01</span>
+              <div class="service-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Full-Stack Web Development</h3>
+            <p class="service-desc">
+              Building responsive and functional web applications using modern front-end technologies and .NET back-end technologies.
+            </p>
+            <div class="service-footer-tags">
+              <span>Responsive UI</span>
+              <span>Full-Stack Integration</span>
+            </div>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-card-top">
+              <span class="service-index">02</span>
+              <div class="service-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">.NET Web Development</h3>
+            <p class="service-desc">
+              Developing structured web applications and APIs using C#, .NET, ASP.NET Core MVC, and .NET Core Web API.
+            </p>
+            <div class="service-footer-tags">
+              <span>C# &amp; .NET</span>
+              <span>RESTful APIs</span>
+            </div>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-card-top">
+              <span class="service-index">03</span>
+              <div class="service-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Database Development</h3>
+            <p class="service-desc">
+              Designing and working with SQL Server databases, queries, data management, and database-driven applications.
+            </p>
+            <div class="service-footer-tags">
+              <span>SQL Server</span>
+              <span>Data Modeling</span>
+            </div>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="service-card animate-on-scroll">
+            <div class="service-card-top">
+              <span class="service-index">04</span>
+              <div class="service-icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="service-title">Software Development &amp; Problem Solving</h3>
+            <p class="service-desc">
+              Building structured software solutions while applying Object-Oriented Programming principles, clean code practices, validation, and exception handling.
+            </p>
+            <div class="service-footer-tags">
+              <span>OOP Principles</span>
+              <span>Clean Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
+
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header animate-on-scroll">
@@ -562,288 +765,14 @@
               <span class="project-note">Repository link placeholder • Active Academic & Training Portfolio</span>
             </div>
           </article>
-
-          <!-- Coming Soon Cards for Visual Harmony -->
-          <div class="projects-placeholder-grid">
-            <div class="project-placeholder-card animate-on-scroll">
-              <div class="placeholder-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <polyline points="12 6 12 12 14 14"></polyline>
-                </svg>
-              </div>
-              <span class="placeholder-tag">In Development</span>
-              <h4 class="placeholder-title">ASP.NET Core Web API Project</h4>
-              <p class="placeholder-desc">
-                Currently building a structured RESTful Web API project focused on Entity Framework Core, JWT authentication, repository pattern, and SQL Server integration.
-              </p>
-              <span class="placeholder-badge">Coming Soon</span>
-            </div>
-
-            <div class="project-placeholder-card animate-on-scroll">
-              <div class="placeholder-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                </svg>
-              </div>
-              <span class="placeholder-tag">In Development</span>
-              <h4 class="placeholder-title">Full-Stack DEPI Capstone</h4>
-              <p class="placeholder-desc">
-                Comprehensive full-stack web application combining modern front-end design with an ASP.NET Core MVC architecture, Docker containerization, and unit testing.
-              </p>
-              <span class="placeholder-badge">Coming Soon</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <!-- EDUCATION & TRAINING SECTION -->
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <section class="section education-section" id="education">
-      <div class="container">
-        <div class="section-header animate-on-scroll">
-          <span class="section-tag">Learning Journey</span>
-          <h2 class="section-title">Education & Training</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">
-            Formal university education combined with intensive specialized software engineering training tracks.
-          </p>
-        </div>
-
-        <div class="timeline-container">
-          <div class="timeline-line" aria-hidden="true"></div>
-
-          <!-- Timeline Item 1: University -->
-          <div class="timeline-item animate-on-scroll">
-            <div class="timeline-dot">
-              <span class="dot-inner"></span>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <span class="timeline-category">Higher Education</span>
-                <span class="timeline-date">Graduation: 2027</span>
-              </div>
-              <h3 class="timeline-title">Delta Technological University</h3>
-              <div class="timeline-meta-row">
-                <span class="meta-pill">Department: Software</span>
-                <span class="meta-pill">Academic Level: Fourth Year</span>
-                <span class="meta-pill">Expected Graduation: 2027</span>
-              </div>
-              <p class="timeline-body">
-                Pursuing rigorous software engineering studies focusing on computer science fundamentals, software engineering methodologies, data structures, algorithms, and practical software design.
-              </p>
-            </div>
-          </div>
-
-          <!-- Timeline Item 2: DEPI Training -->
-          <div class="timeline-item animate-on-scroll">
-            <div class="timeline-dot">
-              <span class="dot-inner"></span>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <span class="timeline-category">Professional Training</span>
-                <span class="timeline-date">Start Date: July 15, 2026</span>
-              </div>
-              <h3 class="timeline-title">Full-Stack .NET Web Developer — DEPI</h3>
-              <div class="timeline-meta-row">
-                <span class="meta-pill">Duration: 6 Months</span>
-                <span class="meta-pill highlight-pill">Specialized Track</span>
-              </div>
-              <p class="timeline-body">
-                Intensive 6-month hands-on full-stack development track focusing on building enterprise-grade .NET applications, scalable backend APIs, containerization, and modern software development practices.
-              </p>
-
-              <div class="timeline-topics-box">
-                <h4 class="topics-title">Curriculum Topics Covered:</h4>
-                <div class="topics-grid">
-                  <span class="topic-item">Prompt Engineering</span>
-                  <span class="topic-item">SQL Server Programming</span>
-                  <span class="topic-item">Git & GitHub</span>
-                  <span class="topic-item">C#</span>
-                  <span class="topic-item">HTML5</span>
-                  <span class="topic-item">JavaScript</span>
-                  <span class="topic-item">CSS3</span>
-                  <span class="topic-item">Functional Documentation</span>
-                  <span class="topic-item">Unit Testing</span>
-                  <span class="topic-item">Docker</span>
-                  <span class="topic-item">Containerization Basics</span>
-                  <span class="topic-item">.NET Core Web API</span>
-                  <span class="topic-item">.NET Core MVC Web Applications</span>
-                  <span class="topic-item">Capstone Project</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Timeline Item 3: ITI Training -->
-          <div class="timeline-item animate-on-scroll">
-            <div class="timeline-dot">
-              <span class="dot-inner"></span>
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <span class="timeline-category">Technical Training</span>
-                <span class="timeline-date">126 Hours</span>
-              </div>
-              <h3 class="timeline-title">ITI — Full Stack Web Development Using PHP</h3>
-              <div class="timeline-meta-row">
-                <span class="meta-pill">Duration: 126 Hours</span>
-                <span class="meta-pill badge-available">Certificate: Available</span>
-              </div>
-              <p class="timeline-body">
-                Completed focused training covering web development principles, backend programming with PHP, database communication, and full-stack integration through practical lab exercises.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <!-- SERVICES SECTION -->
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <section class="section services-section" id="services">
-      <div class="container">
-        <div class="section-header animate-on-scroll">
-          <span class="section-tag">What I Offer</span>
-          <h2 class="section-title">Services</h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">
-            Realistic technical services aligned with my current skills, practical competencies, and ongoing development as a Full-Stack .NET Developer.
-          </p>
-        </div>
-
-        <div class="services-grid">
-          <!-- Service 01 -->
-          <div class="service-card animate-on-scroll">
-            <div class="service-card-top">
-              <span class="service-index">01</span>
-              <div class="service-icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                  <polyline points="2 17 12 22 22 17"></polyline>
-                  <polyline points="2 12 12 17 22 12"></polyline>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Full-Stack Web Development</h3>
-            <p class="service-desc">
-              Building responsive and functional web applications using modern front-end technologies and .NET back-end technologies.
-            </p>
-            <div class="service-footer-tags">
-              <span>Responsive UI</span>
-              <span>Full-Stack Integration</span>
-            </div>
-          </div>
-
-          <!-- Service 02 -->
-          <div class="service-card animate-on-scroll">
-            <div class="service-card-top">
-              <span class="service-index">02</span>
-              <div class="service-icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">.NET Web Development</h3>
-            <p class="service-desc">
-              Developing structured web applications and APIs using C#, .NET, ASP.NET Core MVC, and .NET Core Web API.
-            </p>
-            <div class="service-footer-tags">
-              <span>C# & .NET</span>
-              <span>RESTful APIs</span>
-            </div>
-          </div>
-
-          <!-- Service 03 -->
-          <div class="service-card animate-on-scroll">
-            <div class="service-card-top">
-              <span class="service-index">03</span>
-              <div class="service-icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Database Development</h3>
-            <p class="service-desc">
-              Designing and working with SQL Server databases, queries, data management, and database-driven applications.
-            </p>
-            <div class="service-footer-tags">
-              <span>SQL Server</span>
-              <span>Data Modeling</span>
-            </div>
-          </div>
-
-          <!-- Service 04 -->
-          <div class="service-card animate-on-scroll">
-            <div class="service-card-top">
-              <span class="service-index">04</span>
-              <div class="service-icon-box">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                  <line x1="8" y1="21" x2="16" y2="21"></line>
-                  <line x1="12" y1="17" x2="12" y2="21"></line>
-                </svg>
-              </div>
-            </div>
-            <h3 class="service-title">Software Development & Problem Solving</h3>
-            <p class="service-desc">
-              Building structured software solutions while applying Object-Oriented Programming principles, clean code practices, validation, and exception handling.
-            </p>
-            <div class="service-footer-tags">
-              <span>OOP Principles</span>
-              <span>Clean Code</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <!-- CAREER OBJECTIVE SECTION -->
-    <!-- ════════════════════════════════════════════════════════════ -->
-    <section class="section career-section" id="career-goals">
-      <div class="container">
-        <div class="career-banner animate-on-scroll">
-          <div class="career-banner-glow" aria-hidden="true"></div>
-          <div class="career-banner-content">
-            <div class="career-tag-wrapper">
-              <span class="career-badge">Forward-Looking Vision</span>
-            </div>
-            <h2 class="career-title">Career Objective</h2>
-            <div class="career-quote-box">
-              <p class="career-text-primary">
-                "My goal is to build and develop websites and web applications using modern technologies while continuously strengthening my skills in Full-Stack .NET Development and gaining practical experience through real-world projects."
-              </p>
-              <p class="career-text-secondary">
-                "In the long term, I aspire to become a Senior .NET Developer capable of designing and developing large-scale, scalable systems and contributing effectively to professional development teams."
-              </p>
-            </div>
-            <div class="career-commitments">
-              <div class="commitment-item">
-                <span class="commitment-check">✓</span>
-                <span>Continuous Technical Mastery</span>
-              </div>
-              <div class="commitment-item">
-                <span class="commitment-check">✓</span>
-                <span>Production-Grade Architecture</span>
-              </div>
-              <div class="commitment-item">
-                <span class="commitment-check">✓</span>
-                <span>Collaborative Team Contribution</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Section Divider Banner -->
+    <div class="section-banner-divider" aria-hidden="true">
+      <div class="divider-glow-bar"></div>
+    </div>
 
     <!-- ════════════════════════════════════════════════════════════ -->
     <!-- CONTACT SECTION -->

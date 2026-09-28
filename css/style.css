@@ -276,6 +276,58 @@ code {
   background-clip: text;
 }
 
+/* Subtle Section Banner Divider */
+.section-banner-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.divider-glow-bar {
+  width: 100%;
+  max-width: var(--container-max);
+  height: 1px;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    var(--border-subtle) 20%, 
+    var(--primary-color) 50%, 
+    var(--accent-dotnet) 65%, 
+    var(--border-subtle) 80%, 
+    transparent 100%
+  );
+  position: relative;
+  opacity: 0.65;
+}
+
+.divider-glow-bar::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 140px;
+  height: 6px;
+  background: radial-gradient(ellipse at center, var(--primary-glow) 0%, transparent 75%);
+  border-radius: 50%;
+}
+
+.divider-glow-bar::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--primary-color), 0 0 18px var(--accent-dotnet);
+}
+
 /* -------------------------------------------------------------------
    4. BUTTONS & INTERACTIVE ELEMENTS
    ------------------------------------------------------------------- */
@@ -584,10 +636,15 @@ code {
   z-index: 1;
 }
 
+.hero-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 52px;
+  align-items: center;
+}
+
 .hero-content {
-  max-width: 840px;
-  margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-badge {
@@ -613,44 +670,89 @@ code {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5.5vw, 4.2rem);
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
   font-weight: 800;
   letter-spacing: -0.03em;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
   line-height: 1.15;
 }
 
 .hero-subtitle {
-  font-size: clamp(1.25rem, 2.8vw, 1.85rem);
+  font-size: clamp(1.2rem, 2.4vw, 1.65rem);
   font-weight: 600;
   color: var(--text-secondary);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   letter-spacing: -0.01em;
 }
 
 .hero-intro {
-  font-size: 1.15rem;
+  font-size: 1.08rem;
   line-height: 1.75;
   color: var(--text-secondary);
-  max-width: 720px;
-  margin: 0 auto 36px auto;
+  max-width: 640px;
+  margin-bottom: 32px;
 }
 
 .hero-cta-group {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   flex-wrap: wrap;
 }
 
 .hero-tech-pills {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.hero-photo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-photo-card {
+  width: 100%;
+  max-width: 320px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--border-radius-lg);
+  padding: 12px;
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hero-photo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+}
+
+.hero-photo-img-wrap {
+  width: 100%;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  background: var(--bg-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.hero-photo-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: var(--border-radius-md);
+}
+
+.hero-photo-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.88rem;
 }
 
 .tech-pill {
@@ -679,6 +781,12 @@ code {
   grid-template-columns: 360px 1fr;
   gap: 48px;
   align-items: start;
+}
+
+.about-grid.about-no-photo {
+  display: block;
+  max-width: 920px;
+  margin: 0 auto;
 }
 
 /* Photo Placeholder Card */
@@ -1894,6 +2002,26 @@ code {
     min-height: auto;
     padding-top: calc(var(--header-height) + 40px);
     padding-bottom: 60px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-content {
+    text-align: center;
+    order: 2;
+  }
+
+  .hero-photo-wrapper {
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .hero-cta-group,
+  .hero-tech-pills {
+    justify-content: center;
   }
 
   .hero-title {
