@@ -281,19 +281,54 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       if (isValid) {
-        // Display polite confirmation for user
-        const senderName = inputs.fullName.value.trim();
-        formAlert.className = 'form-alert success';
-        formAlert.textContent = `Thank you, ${senderName}! Your message draft has been received. I look forward to connecting with you.`;
-        formAlert.style.display = 'block';
+        const submitBtn = contactForm.querySelector('#submit-btn');
+        const originalBtnContent = submitBtn ? submitBtn.innerHTML : '';
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>Sending...</span>';
+        }
 
-        // Reset form fields
-        contactForm.reset();
-
-        // Clear notification after 6 seconds
-        setTimeout(() => {
-          formAlert.style.display = 'none';
-        }, 6000);
+        const formData = new FormData(contactForm);
+        fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            const senderName = inputs.fullName.value.trim();
+            formAlert.className = 'form-alert success';
+            formAlert.textContent = `Thank you, ${senderName}! Your message has been sent successfully. I will get back to you soon.`;
+            formAlert.style.display = 'block';
+            contactForm.reset();
+            setTimeout(() => {
+              formAlert.style.display = 'none';
+            }, 6000);
+          } else {
+            return response.json().then(data => {
+              if (data && data.errors) {
+                formAlert.textContent = data.errors.map(err => err.message).join(', ');
+              } else {
+                formAlert.textContent = 'Oops! There was a problem submitting your message. Please try again.';
+              }
+              formAlert.className = 'form-alert error';
+              formAlert.style.display = 'block';
+            });
+          }
+        })
+        .catch(() => {
+          formAlert.className = 'form-alert error';
+          formAlert.textContent = 'Network error. Please try again or connect via LinkedIn / Email.';
+          formAlert.style.display = 'block';
+        })
+        .finally(() => {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnContent;
+          }
+        });
       }
     });
   }
